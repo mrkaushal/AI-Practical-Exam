@@ -1,4 +1,4 @@
-'''Implement Breadth First Search Algorithm in python without using any library'''
+'''Implement Breadth First Search Algorithm in python without using any library and user input'''
 
 class Graph:
     def __init__(self,graph):
@@ -19,14 +19,15 @@ class Graph:
                     self.visited.append(neighbour)
                     self.queue.append(neighbour)
 
-g = { "A" : ["B","C"],
-      "B" : ["D", "E"],
-      "C" : ["F"],
-      "D" : [],
-      "E" : ["F"],
-      "F" : []
+g = { "P" : ["Q","R"],
+      "Q" : ["S", "T"],
+      "R" : ["U"],
+      "S" : [],
+      "T" : ["V"],
+      "U" : [],
+      "V" : []
     }
 
 graph = Graph(g)
 
-graph.bfs("B")
+graph.bfs("P")
