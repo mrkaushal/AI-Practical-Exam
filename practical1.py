@@ -31,3 +31,13 @@ g = { "P" : ["Q","R"],
 graph = Graph(g)
 
 graph.bfs("P")
+
+
+#output explination
+#P Q R S T U V
+
+#P is the starting node
+#Q R are the neighbours of P
+#S T U are the neighbours of Q
+#V is the neighbour of T
+#U is the neighbour of R
